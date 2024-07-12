@@ -10,7 +10,18 @@ const person1: personObject = {
     id: 1,
   };
 
+  const person2: personObject = {
+    name: 'kamran',
+    id: 2,
+  };
+
+  const person3: personObject = {
+    name: 'kaleem',
+    id: 3,
+  };
+  
+
   const sayHello = (person: personObject) => {
     return 'Hi ' + person.name;
   };
-  console.log(sayHello(person1));
+  console.log(sayHello(person2));

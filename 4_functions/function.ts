@@ -13,3 +13,19 @@ let sayStuff : Speech={
 
 console.log(sayStuff.sayHi('murtaza'));
 console.log(sayStuff.sayBye('murtaza'));
+
+// extending an interface ...
+
+interface Animal {
+    name: string
+}
+
+interface bear extends Animal{
+    honey: boolean
+}
+
+const Bear: bear = {
+    name: 'brownie',
+    honey: true,
+}
+console.log(Bear);
