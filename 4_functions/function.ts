@@ -29,3 +29,18 @@ const Bear: bear = {
     honey: true,
 }
 console.log(Bear);
+
+// extending via intersection...
+
+type animal = {
+    name: string
+  }
+  
+  type fox = animal & {
+    bone: boolean
+  }
+  
+  const Fox: fox = {
+    name: "dfmd",
+    bone: true,
+  }
